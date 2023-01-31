@@ -1,0 +1,14 @@
+1.git init -> gitni joriy katalogga o'rnatish (initsializatsiya qilish)
+2.git config --list -> gitning sozlamalar royhatini korish
+3.git config user.name -> gitning foydalanuvchi nomini ko'rish
+4.git config user.email -> gitning foydalanuvchi email pochtasini korish
+5.git config user.name "Nizomjon" -> "Nizomjon" nomli git foydalanuvchisini yaratish(foydalanuvchi nomini o'zgartirish)
+6.touch "filename" -> joriy ktalogda "filename" nomli fayl yaratish
+7.git add . -> fayldagi o'zgarishlarni gitga qo'shish
+8.git status -> gitning holatini tekshirish
+9.git commit -m "info" -> codeda bo'lgan o'zgarishlarni izoh bilan tasdiqlash
+10.git log -> mavjud loyiha uchun qilingan ishlar royhatini ko'rish
+11.git branch -> joriy loyihada mavjud "filiallarni" ko'rish
+12.git branch "lolipop" -> git uchun "lolipop" nomli branch(filialni)ni qo'shish
+13.git switch "branch_name" -> joriy branchni yangi branchga almashtirish
+14.git merge "branch_name" -> joriy branch va ko'rsatilgan branchdagi o'zgarishlarni birlashtirish
