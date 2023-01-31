@@ -23,8 +23,8 @@ class Win(QWidget):
         self.edit.move(100,50)
 
         self.btn.clicked.connect(self.click)
-        self.nine.clicked.connect(self.nineW)
-        self.plus.clicked.connect(self.plusW)
+        self.nine.clicked.connect(lambda: self.nineW("9"))
+        self.plus.clicked.connect(lambda: self.plusW("+"))
         self.clear.clicked.connect(self.clearW)
         self.setStyleW(self.nine)
         self.setStyleW(self.plus)
@@ -43,20 +43,19 @@ class Win(QWidget):
         except:
             text = "Error"
         self.edit.setText(text)
-        self.edit.textEdited
 
-    def nineW(self):
+    def nineW(self, num):
         text = self.edit.text()
-        text += "9"
+        text += num
         self.edit.setText(text)
 
     def clearW(self):
         self.edit.clear()
 
-    def plusW(self):
+    def plusW(self, symbol):
         text = self.edit.text()
-        if text[-1] != "+":
-            text +="+"
+        if text[-1] != symbol:
+            text +=symbol
             self.edit.setText(text)
 
 
